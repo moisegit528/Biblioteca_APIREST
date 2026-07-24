@@ -1,8 +1,8 @@
 spring:
   application:
-    name: to-do-list
+    name: Biblioteca
   datasource:
-    url: jdbc:mysql://localhost:3306/todolist?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/Biblioteca?createDatabaseIfNotExist=true
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver

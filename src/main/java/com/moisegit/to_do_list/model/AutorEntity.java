@@ -6,17 +6,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity(name = "livro")
+@Entity(name = "autor")
 @NoArgsConstructor
 @AllArgsConstructor
-@Setter
 @Getter
-public class LivroEntity {
+@Setter
+public class AutorEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    String nome;
 
-    private String titulo;
 
 }
