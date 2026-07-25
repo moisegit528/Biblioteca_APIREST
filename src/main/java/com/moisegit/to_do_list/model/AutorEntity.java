@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity(name = "autor")
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,5 +21,6 @@ public class AutorEntity {
     private Integer id;
     String nome;
 
-
+    @OneToMany(mappedBy = "autor")
+    private Set<LivroEntity> livro = new HashSet<>();
 }

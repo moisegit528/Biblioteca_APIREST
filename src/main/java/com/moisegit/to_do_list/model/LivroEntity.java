@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity(name = "livro")
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,4 +22,7 @@ public class LivroEntity {
 
     private String titulo;
 
+    @ManyToOne
+    @JoinColumn(name = "autor_id")
+    private AutorEntity autor;
 }
