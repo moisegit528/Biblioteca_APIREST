@@ -39,11 +39,24 @@ public class AutorService {
     }
 
     // PUT
-    public void atualizarAutor(AutorDto autorDto) {
+    public AutorDto atualizarAutor(AutorDto autorDto) {
         AutorEntity autor = autorRepository.findById(autorDto.getAutorId())
                 .orElseThrow(() -> new NotFoundException("Autor não encontrado!"));
-        autorRepository.save(autor);
+        autor .setNome(autorDto.getNome());
+        autor.setNacionalidade(autorDto.getNacionalidade());
+        autor.setBiografia(autorDto.getBiografia());
+        AutorEntity autorAtualizado = autorRepository.save(autor);
 
+        return AutorDto.builder()
+                .nome(autorAtualizado.getNome())
+                .nacionalidade(autorAtualizado.getNacionalidade())
+                .biografia(autorAtualizado.getBiografia())
+                .build();
+    }
+
+    // DELETE
+    void deletarAutor(Integer id) {
+        autorRepository.deleteById(id);
     }
 
 }
