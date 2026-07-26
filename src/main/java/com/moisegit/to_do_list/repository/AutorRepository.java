@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface AutorRepository extends JpaRepository<AutorEntity, Integer> {
-    List<AutorDto> findByNome(String nome);
-    List<AutorDto> findByNacionalidade(String nacionalidade);
+    List<AutorEntity> findByNome(String nome);
+    List<AutorEntity> findByNacionalidade(String nacionalidade);
 }
