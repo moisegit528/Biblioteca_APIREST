@@ -36,13 +36,25 @@ public class LivroController {
 
     @GetMapping("/titulo/{titulo}")
     @ResponseStatus(HttpStatus.OK)
-    public List<LivroEntity> findBytitulo(@RequestParam String titulo){
+    public List<LivroEntity> findBytitulo(@PathVariable String titulo){
         return livroService.findBytitulo(titulo);
     }
 
     @GetMapping("/id/{autorId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<LivroEntity> findByautorId(@RequestParam Integer autorId){
+    public List<LivroEntity> findByautorId(@PathVariable Integer autorId){
         return livroService.findByautorId(autorId);
+    }
+
+    @PutMapping("/idlivro/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void atualizarLivro(@PathVariable Integer id, @RequestBody LivroDto livroDto) {
+        livroService.atualizarLivro(id, livroDto);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void deletarLivro(@PathVariable Integer id){
+        livroService.deletarLivro(id);
     }
 }

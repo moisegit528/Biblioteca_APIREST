@@ -42,10 +42,12 @@ public class LivroService {
         return livroRepository.findByautorId(autorId);
     }
     // PUT - CADASTRO ERRADO, PRECISA SER CORRIGIDO
-    public void atualizarLivro(LivroDto livroDto) {
+    public void atualizarLivro(Integer id, LivroDto livroDto) {
         livroRepository.save(LivroEntity.builder()
+                        .id(id)
                         .titulo(livroDto.getTitulo())
                         .genero(livroDto.getGenero())
+                        .autor(AutorEntity.builder().id(livroDto.getAutorId()).build())
                 .build());
     }
     // DELETAR LIVRO
