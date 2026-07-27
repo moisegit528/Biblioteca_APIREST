@@ -1,10 +1,8 @@
 package com.moisegit.to_do_list.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.validation.constraints.NotBlank;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -14,13 +12,16 @@ import java.util.Set;
 @AllArgsConstructor
 @Setter
 @Getter
+@Builder
 public class LivroEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+    @NotBlank
     private String titulo;
+    @NotBlank
+    private String genero;
 
     @ManyToOne
     @JoinColumn(name = "autor_id")

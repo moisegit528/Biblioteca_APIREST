@@ -30,11 +30,11 @@ public class AutorService {
         return autorRepository.findAll();
     }
     // GET
-    public List<AutorDto> findByNome(String nome) {
+    public List<AutorEntity> findByNome(String nome) {
         return autorRepository.findByNome(nome);
     }
     // GET
-    public List<AutorDto> findByNacionalidade(String nacionalidade) {
+    public List<AutorEntity> findByNacionalidade(String nacionalidade) {
         return autorRepository.findByNacionalidade(nacionalidade);
     }
 
@@ -42,6 +42,7 @@ public class AutorService {
     public AutorDto atualizarAutor(AutorDto autorDto) {
         AutorEntity autor = autorRepository.findById(autorDto.getAutorId())
                 .orElseThrow(() -> new NotFoundException("Autor não encontrado!"));
+        autor.setId(autorDto.getAutorId());
         autor .setNome(autorDto.getNome());
         autor.setNacionalidade(autorDto.getNacionalidade());
         autor.setBiografia(autorDto.getBiografia());

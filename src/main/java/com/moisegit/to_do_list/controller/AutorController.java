@@ -32,7 +32,19 @@ public class AutorController {
 
     @GetMapping("/nome/{nome}")
     @ResponseStatus(HttpStatus.OK)
-    public List<AutorDto> findByNome(@PathVariable String nome) {
+    public List<AutorEntity> findByNome(@PathVariable String nome) {
         return autorService.findByNome(nome);
+    }
+
+    @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void atualizarAutor(@PathVariable Integer id, @RequestBody AutorDto autorDto) {
+        autorService.atualizarAutor(autorDto);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteAutor(@PathVariable Integer id) {
+        autorRepository.deleteById(id);
     }
 }
