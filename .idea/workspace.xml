@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08c4c076-e51b-44bb-8f76-ccc44d3df7c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/LivroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/dto/LivroDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/LivroService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/AutorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/AutorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/AutorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/AutorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/LivroEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/LivroEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/repository/LivroRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/repository/LivroRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/AutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/AutorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moisegit/to_do_list/controller/AutorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moisegit/to_do_list/controller/AutorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moisegit/to_do_list/repository/AutorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moisegit/to_do_list/repository/AutorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/moisegit/to_do_list/service/AutorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/moisegit/to_do_list/service/AutorService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
