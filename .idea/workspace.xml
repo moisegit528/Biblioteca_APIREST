@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08c4c076-e51b-44bb-8f76-ccc44d3df7c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/LeitorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/dto/LeitorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/LeitorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/LivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/LivroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/LivroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/LivroService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/LeitorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/LeitorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/repository/LeitorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/repository/LeitorRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
