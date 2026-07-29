@@ -11,7 +11,6 @@ import lombok.*;
 @Builder
 public class LeitorDto {
 
-    private Integer leitorId;
     @NotBlank
     private String nome;
     @NotBlank

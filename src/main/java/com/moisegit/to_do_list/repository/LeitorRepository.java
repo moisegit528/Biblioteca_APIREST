@@ -4,8 +4,9 @@ import com.moisegit.to_do_list.model.LeitorEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface LeitorRepository extends JpaRepository<LeitorEntity, Integer> {
-    List<LeitorEntity> findByid(Integer id);
-    List<LeitorEntity> findByEmail(String email);
+    Optional<LeitorEntity> findByid(Integer id);
+    Optional<LeitorEntity> findByEmail(String email);
 }

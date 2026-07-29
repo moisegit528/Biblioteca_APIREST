@@ -29,19 +29,19 @@ public class LeitorController {
     }
     @GetMapping("/id/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public List<LeitorEntity> findByid(@PathVariable Integer id) {
+    public LeitorEntity findByid(@PathVariable Integer id) {
         return leitorService.findByid(id);
     }
     @GetMapping("/email/{email}")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public List<LeitorEntity> findByEmail(@PathVariable String email) {
+    public LeitorEntity findByEmail(@PathVariable String email) {
         return leitorService.findByEmail(email);
     }
 
-    @PutMapping
+    @PutMapping("/update/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public void updateData(@RequestBody LeitorDto leitorDto) {
-        leitorService.updateData(leitorDto);
+    public void updateData(@PathVariable Integer id, @RequestBody LeitorDto leitorDto) {
+        leitorService.updateData(id, leitorDto);
     }
 
     @DeleteMapping("/{id}")
