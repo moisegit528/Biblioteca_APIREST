@@ -32,8 +32,14 @@ public class AutorController {
 
     @GetMapping("/nome/{nome}")
     @ResponseStatus(HttpStatus.OK)
-    public List<AutorEntity> findByNome(@PathVariable String nome) {
+    public AutorEntity findByNome(@PathVariable String nome) {
         return autorService.findByNome(nome);
+    }
+
+    @GetMapping("/nacionalidade/{nacionalidade}")
+    @ResponseStatus(HttpStatus.OK)
+    public AutorEntity findByNacionalidade(@PathVariable String nacionalidade) {
+        return autorService.findByNacionalidade(nacionalidade);
     }
 
     @PutMapping("/{id}")
@@ -42,7 +48,7 @@ public class AutorController {
         autorService.atualizarAutor(autorDto);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/deletar/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void deleteAutor(@PathVariable Integer id) {
         autorRepository.deleteById(id);

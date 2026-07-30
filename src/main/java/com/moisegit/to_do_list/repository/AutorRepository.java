@@ -6,8 +6,9 @@ import com.moisegit.to_do_list.model.AutorEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface AutorRepository extends JpaRepository<AutorEntity, Integer> {
-    List<AutorEntity> findByNome(String nome);
-    List<AutorEntity> findByNacionalidade(String nacionalidade);
+    Optional<AutorEntity> findByNome(String nome);
+    Optional<AutorEntity> findByNacionalidade(String nacionalidade);
 }

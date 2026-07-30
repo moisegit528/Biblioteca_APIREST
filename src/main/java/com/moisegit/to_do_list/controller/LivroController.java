@@ -36,13 +36,13 @@ public class LivroController {
 
     @GetMapping("/titulo/{titulo}")
     @ResponseStatus(HttpStatus.OK)
-    public List<LivroEntity> findBytitulo(@PathVariable String titulo){
+    public LivroEntity findBytitulo(@PathVariable String titulo){
         return livroService.findBytitulo(titulo);
     }
 
     @GetMapping("/id/{autorId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<LivroEntity> findByautorId(@PathVariable Integer autorId){
+    public LivroEntity findByautorId(@PathVariable Integer autorId){
         return livroService.findByautorId(autorId);
     }
 

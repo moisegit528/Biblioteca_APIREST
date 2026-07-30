@@ -5,8 +5,9 @@ import com.moisegit.to_do_list.model.LivroEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface LivroRepository extends JpaRepository<LivroEntity, Integer> {
-    List<LivroEntity> findBytitulo(String titulo);
-    List<LivroEntity> findByautorId(Integer autorId);
+    Optional<LivroEntity> findBytitulo(String titulo);
+    Optional<LivroEntity> findByautorId(Integer autorId);
 }

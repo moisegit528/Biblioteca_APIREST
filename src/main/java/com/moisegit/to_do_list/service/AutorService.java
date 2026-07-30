@@ -30,12 +30,14 @@ public class AutorService {
         return autorRepository.findAll();
     }
     // GET
-    public List<AutorEntity> findByNome(String nome) {
-        return autorRepository.findByNome(nome);
+    public AutorEntity findByNome(String nome) throws NotFoundException {
+        return autorRepository.findByNome(nome)
+                .orElseThrow(() -> new NotFoundException("Autor não encontrado"));
     }
     // GET
-    public List<AutorEntity> findByNacionalidade(String nacionalidade) {
-        return autorRepository.findByNacionalidade(nacionalidade);
+    public AutorEntity findByNacionalidade(String nacionalidade) throws NotFoundException {
+        return autorRepository.findByNacionalidade(nacionalidade)
+                .orElseThrow(() -> new NotFoundException("Autor não encontrado"));
     }
 
     // PUT
