@@ -9,5 +9,7 @@ import lombok.*;
 @Builder
 public class EmprestimoDto {
 
+    private String emailLeitor;
+    private String tituloLivro;
 
 }
