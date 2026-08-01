@@ -12,7 +12,9 @@ import lombok.RequiredArgsConstructor;
 import org.apache.coyote.BadRequestException;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -36,6 +38,9 @@ public class EmprestimoService {
                 .leitor(leitor)
                 .livro(livros)
                 .build();
+
+        emprestimo.setDataDevolucao(LocalDateTime.now().plusDays(7));
+
         emprestimoRepository.save(emprestimo);
 
         return EmprestimoDto.builder()
@@ -43,6 +48,31 @@ public class EmprestimoService {
                 .dataEmprestimo(emprestimo.getDataEmprestimo())
                 .dataDevolucao(emprestimo.getDataDevolucao())
                 .tituloLivro(livro.getTitulo())
+                .build();
+    }
+
+    public List<EmprestimoEntity> findAll() {
+        return emprestimoRepository.findAll();
+    }
+    public EmprestimoEntity findByEmail(String email) {
+        return emprestimoRepository.findByLeitorEmail(email)
+                .orElseThrow(() -> new NotFoundException("Email não encontrado!"));
+    }
+
+    public EmprestimoDto atualizarEmprestimo(EmprestimoDto emprestimoDto) {
+        EmprestimoEntity emprestimo = emprestimoRepository.findByLeitorEmail(emprestimoDto.getEmailLeitor())
+                .orElseThrow(() -> new NotFoundException("Leitor não encontrado!"));
+
+        emprestimoDto.setEmailLeitor(emprestimo.getLeitor().getEmail());
+        emprestimoDto.setTituloLivro(emprestimoDto.getTituloLivro());
+        emprestimoDto.setDataEmprestimo(emprestimoDto.getDataEmprestimo());
+        emprestimoDto.setDataDevolucao(emprestimoDto.getDataDevolucao());
+
+        EmprestimoEntity emprestimoAtualizado = emprestimoRepository.save(emprestimo);
+
+        return EmprestimoDto.builder()
+                .dataEmprestimo(emprestimoAtualizado.getDataEmprestimo())
+                .dataDevolucao(emprestimoAtualizado.getDataDevolucao())
                 .build();
     }
 }

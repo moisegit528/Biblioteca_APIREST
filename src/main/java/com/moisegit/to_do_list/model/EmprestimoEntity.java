@@ -23,7 +23,6 @@ public class EmprestimoEntity {
 
     @CreationTimestamp
     private LocalDateTime dataEmprestimo;
-    @CreationTimestamp
     private LocalDateTime dataDevolucao;
 
     @ManyToOne
