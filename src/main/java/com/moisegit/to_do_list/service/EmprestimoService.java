@@ -12,6 +12,9 @@ import lombok.RequiredArgsConstructor;
 import org.apache.coyote.BadRequestException;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Service
 @RequiredArgsConstructor
 public class EmprestimoService {
@@ -20,15 +23,26 @@ public class EmprestimoService {
     private final LeitorRepository leitorRepository;
     private final LivroRepository livroRepository;
 
-    public void realizarEmprestimo(EmprestimoDto emprestimoDto) {
+    public EmprestimoDto realizarEmprestimo(EmprestimoDto emprestimoDto) {
         LeitorEntity leitor = leitorRepository.findByEmail(emprestimoDto.getEmailLeitor())
                 .orElseThrow(() -> new NotFoundException("Leitor não encontrado!"));
         LivroEntity livro = livroRepository.findBytitulo(emprestimoDto.getTituloLivro())
                 .orElseThrow(() -> new NotFoundException("Livro não encontrado!"));
 
-        leitor = EmprestimoEntity.builder()
-                .leitor(emprestimoDto.getEmailLeitor())
-                .livro(emprestimoDto.getTituloLivro())
+        Set<LivroEntity> livros = new HashSet<>();
+        livros.add(livro);
+
+        EmprestimoEntity emprestimo = EmprestimoEntity.builder()
+                .leitor(leitor)
+                .livro(livros)
+                .build();
+        emprestimoRepository.save(emprestimo);
+
+        return EmprestimoDto.builder()
+                .emailLeitor(emprestimo.getLeitor().getEmail())
+                .dataEmprestimo(emprestimo.getDataEmprestimo())
+                .dataDevolucao(emprestimo.getDataDevolucao())
+                .tituloLivro(livro.getTitulo())
                 .build();
     }
 }
