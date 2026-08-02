@@ -1,0 +1,56 @@
+package com.moisegit.biblioteca.controller;
+
+import com.moisegit.biblioteca.dto.AutorDto;
+import com.moisegit.biblioteca.model.AutorEntity;
+import com.moisegit.biblioteca.repository.AutorRepository;
+import com.moisegit.biblioteca.service.AutorService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/autor")
+@RequiredArgsConstructor
+public class AutorController {
+
+    private final AutorRepository autorRepository;
+    private final AutorService autorService;
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public void createAutor(@RequestBody AutorDto autorDto) {
+        autorService.cadastrarAutor(autorDto);
+    }
+
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    List<AutorEntity> findAll() {
+        return autorRepository.findAll();
+    }
+
+    @GetMapping("/nome/{nome}")
+    @ResponseStatus(HttpStatus.OK)
+    public AutorEntity findByNome(@PathVariable String nome) {
+        return autorService.findByNome(nome);
+    }
+
+    @GetMapping("/nacionalidade/{nacionalidade}")
+    @ResponseStatus(HttpStatus.OK)
+    public AutorEntity findByNacionalidade(@PathVariable String nacionalidade) {
+        return autorService.findByNacionalidade(nacionalidade);
+    }
+
+    @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void atualizarAutor(@PathVariable Integer id, @RequestBody AutorDto autorDto) {
+        autorService.atualizarAutor(autorDto);
+    }
+
+    @DeleteMapping("/deletar/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteAutor(@PathVariable Integer id) {
+        autorRepository.deleteById(id);
+    }
+}

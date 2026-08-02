@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.moisegit.to-do-list' is invalid and this project uses 'com.moisegit.to_do_list' instead.
+* The original package name 'com.moisegit.to-do-list' is invalid and this project uses 'com.moisegit.biblioteca' instead.
 
 # Getting Started
 
