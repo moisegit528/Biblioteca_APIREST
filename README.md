@@ -49,9 +49,6 @@ API REST desenvolvida em **Spring Boot** para gerenciar uma biblioteca, permitin
 
 ## 📸 Exemplos de requisições no Postman
 
-![POST Autor](./docs_postman-tests.md/Autor-Tests/POST_autor.png)
-
-
 Os testes realizados estão organizados por entidade dentro da pasta `docs_postman-tests.md`:
 
 - [Autor Tests](./docs_postman-tests.md/Autor-Tests)
