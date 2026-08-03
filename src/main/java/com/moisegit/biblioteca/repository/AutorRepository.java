@@ -8,5 +8,4 @@ import java.util.Optional;
 
 public interface AutorRepository extends JpaRepository<AutorEntity, Integer> {
     Optional<AutorEntity> findByNome(String nome);
-    Optional<AutorEntity> findByNacionalidade(String nacionalidade);
 }

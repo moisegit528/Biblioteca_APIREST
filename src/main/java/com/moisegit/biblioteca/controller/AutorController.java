@@ -36,11 +36,6 @@ public class AutorController {
         return autorService.findByNome(nome);
     }
 
-    @GetMapping("/nacionalidade/{nacionalidade}")
-    @ResponseStatus(HttpStatus.OK)
-    public AutorEntity findByNacionalidade(@PathVariable String nacionalidade) {
-        return autorService.findByNacionalidade(nacionalidade);
-    }
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)

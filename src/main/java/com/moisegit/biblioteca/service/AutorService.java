@@ -33,17 +33,11 @@ public class AutorService {
         return autorRepository.findByNome(nome)
                 .orElseThrow(() -> new NotFoundException("Autor não encontrado"));
     }
-    // GET
-    public AutorEntity findByNacionalidade(String nacionalidade) throws NotFoundException {
-        return autorRepository.findByNacionalidade(nacionalidade)
-                .orElseThrow(() -> new NotFoundException("Autor não encontrado"));
-    }
 
     // PUT
     public AutorDto atualizarAutor(AutorDto autorDto) {
         AutorEntity autor = autorRepository.findById(autorDto.getAutorId())
                 .orElseThrow(() -> new NotFoundException("Autor não encontrado!"));
-        autor.setId(autorDto.getAutorId());
         autor .setNome(autorDto.getNome());
         autor.setNacionalidade(autorDto.getNacionalidade());
         autor.setBiografia(autorDto.getBiografia());

@@ -5,34 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08c4c076-e51b-44bb-8f76-ccc44d3df7c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/Biblioteca_APIRESTApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/Biblioteca_APIRESTApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/AutorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/controller/AutorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/EmprestimoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/controller/EmprestimoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/LeitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/controller/LeitorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/controller/LivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/controller/LivroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/dto/AutorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/dto/AutorDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/dto/EmprestimoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/dto/EmprestimoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/dto/LeitorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/dto/LeitorDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/dto/LivroDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/dto/LivroDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/exception/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/exception/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/AutorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/model/AutorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/EmprestimoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/model/EmprestimoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/LeitorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/model/LeitorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/model/LivroEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/model/LivroEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/repository/AutorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/repository/AutorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/repository/EmprestimoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/repository/EmprestimoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/repository/LeitorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/repository/LeitorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/repository/LivroRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/repository/LivroRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/AutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/service/AutorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/EmprestimoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/service/EmprestimoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/LeitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/service/LeitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/to_do_list/service/LivroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/service/LivroService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/moisegit/to_do_list/BibliotecaAPIRESTApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/moisegit/biblioteca/BibliotecaAPIRESTApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/controller/AutorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/controller/AutorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/repository/AutorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/repository/AutorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/service/AutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/service/AutorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +132,8 @@
       <workItem from="1785458533931" duration="4095000" />
       <workItem from="1785538092421" duration="6571000" />
       <workItem from="1785613062149" duration="4561000" />
-      <workItem from="1785694340263" duration="13472000" />
+      <workItem from="1785694340263" duration="13814000" />
+      <workItem from="1785797770153" duration="2810000" />
     </task>
     <servers />
   </component>
