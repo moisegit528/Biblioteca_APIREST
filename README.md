@@ -53,7 +53,7 @@ API REST desenvolvida em **Spring Boot** para gerenciar uma biblioteca, permitin
 
 Este teste valida o endpoint responsável por cadastrar um novo autor na API.
 
-![POST Autor](./docs_postman-tests.md/Autor-Tests/post_autor.png)
+![POST Autor](./docs_postman-tests/Autor-Tests/post_autor.png)
 
 **Descrição:**
 - Método: `POST`
