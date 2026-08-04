@@ -6,9 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="08c4c076-e51b-44bb-8f76-ccc44d3df7c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/controller/AutorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/controller/AutorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/repository/AutorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/repository/AutorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/service/AutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moisegit/biblioteca/service/AutorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Autor-Tests/GET - Busca nome do Autor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Autor-Tests/GET - Lista dos Autores.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Autor-Tests/POST - autor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Autor-Tests/PUT - Atualizando dados Autor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Emprestimo-Tests/DELETE - pelo numero do emprestimo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Emprestimo-Tests/GET - busca pelo numero do emprestimo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Emprestimo-Tests/GET - listar emprestimos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Emprestimo-Tests/POST - emprestimo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Emprestimo-Tests/PUT - renovar data emprestimo - 7 dias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Leitor-Tests/DELETE - deletando leitor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Leitor-Tests/GET - buscar pelo email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Leitor-Tests/GET - buscar pelo id.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Leitor-Tests/GET - listar leitores.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Leitor-Tests/POST - leitor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Leitor-Tests/PUT - atualizando leitor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Livro-Tests/DELETE - pelo id.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Livro-Tests/GET - buscar o livro pelo titulo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Livro-Tests/GET - buscar pelo id do autor do livro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Livro-Tests/GET - listar todos os livros.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Livro-Tests/POST - livro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs_postman-tests.md/Livro-Tests/PUT - atualizando livro.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +151,7 @@
       <workItem from="1785538092421" duration="6571000" />
       <workItem from="1785613062149" duration="4561000" />
       <workItem from="1785694340263" duration="13814000" />
-      <workItem from="1785797770153" duration="2810000" />
+      <workItem from="1785797770153" duration="3549000" />
     </task>
     <servers />
   </component>
