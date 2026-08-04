@@ -49,18 +49,6 @@ API REST desenvolvida em **Spring Boot** para gerenciar uma biblioteca, permitin
 
 ## 📸 Exemplos de requisições no Postman
 
-## 🧪 Teste - POST Autor
-
-Este teste valida o endpoint responsável por cadastrar um novo autor na API.
-
-![POST Autor](./docs_postman-tests/Autor-Tests/post_autor.png)
-
-**Descrição:**
-- Método: `POST`
-- Endpoint: `/autor`
-- Status esperado: `201 Created`
-- Resultado: Autor cadastrado com sucesso.
-
 Os testes realizados estão organizados por entidade dentro da pasta `docs_postman-tests.md`:
 
 - [Autor Tests](./docs_postman-tests.md/Autor-Tests)
